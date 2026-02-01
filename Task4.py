@@ -60,8 +60,6 @@ model.fit(X_train, y_train)
 
 
 # In[8]:
-
-
 # Predictions
 y_pred = model.predict(X_test)
 
@@ -79,14 +77,12 @@ print(confusion_matrix(y_test, y_pred))
 
 
 # In[9]:
-
-
 sample_emails = [
     "Congratulations! You've won a free iPhone. Click now!",
     "Hey, are we still meeting for lunch today?",
     "Limited time offer!!! Get cheap loans now"
 ]
-
+#in[10]:
 predictions = model.predict(sample_emails)
 
 for email, label in zip(sample_emails, predictions):
@@ -96,7 +92,4 @@ for email, label in zip(sample_emails, predictions):
 
 
 # In[ ]:
-
-
-
 
